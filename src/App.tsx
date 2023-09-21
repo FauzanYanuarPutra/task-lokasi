@@ -167,7 +167,7 @@ export default class App extends React.Component<{}, State> {
           <div className='text-xl mb-10'>Selamat Datang</div>
           <form action="" className='flex flex-col gap-5'>
             <FormInput
-              name='kelurahan'
+              name='provinsi'
               data={this.state.dataProvinsi}
               onChange={this.HandleProvinsiChange}
             />

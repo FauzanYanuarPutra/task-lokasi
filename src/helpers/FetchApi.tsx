@@ -1,6 +1,6 @@
 export const DataProvinsi = async () => {
   try {
-    const response = await fetch('http://www.emsifa.com/api-wilayah-indonesia/api/provinces.json');
+    const response = await fetch('https://www.emsifa.com/api-wilayah-indonesia/api/provinces.json');
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
@@ -14,7 +14,7 @@ export const DataProvinsi = async () => {
 
 export const DataKota = async (id: string) => {
   try {
-    const response = await fetch(`http://www.emsifa.com/api-wilayah-indonesia/api/regencies/${id}.json`);
+    const response = await fetch(`https://www.emsifa.com/api-wilayah-indonesia/api/regencies/${id}.json`);
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
@@ -29,7 +29,7 @@ export const DataKota = async (id: string) => {
 
 export const DataKecamatan = async (id: string) => {
   try {
-    const response = await fetch(`http://www.emsifa.com/api-wilayah-indonesia/api/districts/${id}.json`);
+    const response = await fetch(`https://www.emsifa.com/api-wilayah-indonesia/api/districts/${id}.json`);
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
@@ -43,7 +43,7 @@ export const DataKecamatan = async (id: string) => {
 
 export const DataKelurahan = async (id: string) => {
   try {
-    const response = await fetch(`http://www.emsifa.com/api-wilayah-indonesia/api/villages/${id}.json`);
+    const response = await fetch(`https://www.emsifa.com/api-wilayah-indonesia/api/villages/${id}.json`);
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
@@ -54,6 +54,8 @@ export const DataKelurahan = async (id: string) => {
     throw error;
   }
 };
+
+
 
 
 
