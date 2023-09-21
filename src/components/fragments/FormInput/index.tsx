@@ -12,9 +12,9 @@ export default class FormInput extends React.Component<FormInputProps> {
     return (
       <>
         <div className={'flex flex-col gap-2'}>
-          <label htmlFor={name}>{name}</label>
-          <select id={name} name={name} onChange={onChange}>
-            <option value="" className='capitalize'>Pilih {name}</option>
+          <label htmlFor={name} className=" font-medium opacity-50">{name} : </label>
+          <select id={name} name={name} onChange={onChange} className="rounded-lg">
+            <option value="" className=''>Pilih {name}</option>
             {data.map((item: any) => (
               <option key={item.id} value={item.id}>
                 {item.name}

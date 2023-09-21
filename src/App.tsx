@@ -163,9 +163,11 @@ export default class App extends React.Component<{}, State> {
           </motion.div>
         )}
       </AnimatePresence>
-        <div className='w-[90%] my-20 mx-auto'>
-          <div className='text-xl mb-10'>Selamat Datang</div>
-          <form action="" className='flex flex-col gap-5'>
+        <div className='w-[90%] max-w-[800px] my-14  mx-auto'>
+          <div className='text-xl my-6'>
+            Selamat Datang Di Task Fauzan
+          </div>
+          <form action="" className='flex flex-col gap-3'>
             <FormInput
               name='provinsi'
               data={this.state.dataProvinsi}
@@ -194,7 +196,7 @@ export default class App extends React.Component<{}, State> {
               />
             )}
             <Button
-              name='Submit'
+              name={`${this.state.selectedKelurahan !== '' ? 'Submit' : 'Isi Dulu Form Nya !!'}`}
               type='button'
               className={`${this.state.selectedKelurahan === '' ? ' bg-gray-400 cursor-auto' : 'bg-blue-500 cursor-pointer'} p-3 rounded-lg text-white text-lg font-bold`}
               onClick={() => {
