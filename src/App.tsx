@@ -57,7 +57,7 @@ export default class App extends React.Component<{}, State> {
     this.ambilDataProvinsi();
   }
 
-  HandleProvinsiChange = async (event: React.ChangeEvent<HTMLSelectElement>) => {
+  HandleProvinsiChange = async (event: any) => {
     const selectedProvinsi = event.target.value;
     this.setState({
       selectedProvinsi,
@@ -74,7 +74,7 @@ export default class App extends React.Component<{}, State> {
     }
   };
 
-  HandleKotaChange = async (event: React.ChangeEvent<HTMLSelectElement>) => {
+  HandleKotaChange = async (event: any) => {
     const selectedKota = event.target.value;
     console.log('Selected Kecamatan:', selectedKota);
     this.setState({
@@ -90,7 +90,7 @@ export default class App extends React.Component<{}, State> {
     }
   };
 
-  HandleKecamatanChange = async (event: React.ChangeEvent<HTMLSelectElement>) => {
+  HandleKecamatanChange = async (event: any) => {
     const selectedKecamatan = event.target.value;
     this.setState({
       selectedKecamatan,
@@ -103,7 +103,7 @@ export default class App extends React.Component<{}, State> {
     }
   };
 
-  HandleKelurahanChange = async (event: React.ChangeEvent<HTMLSelectElement>) => {
+  HandleKelurahanChange = async (event: any) => {
     const selectedKelurahan = event.target.value;
     this.setState({
       selectedKelurahan,
