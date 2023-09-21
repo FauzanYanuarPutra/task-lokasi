@@ -1,5 +1,5 @@
 import React from 'react';
-import { DataKota, DataProvinsi, DataKecamatan, DataKelurahan } from './helpers/FetchApi';
+import { DataKota, DataProvinsi, DataKecamatan, DataKelurahan } from './api/FetchApi';
 import Button from './components/elements/Button';
 import { motion, AnimatePresence } from 'framer-motion'
 import FormInput from './components/fragments/FormInput';
